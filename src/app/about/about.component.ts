@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -7,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  about = 'About!';
+  about = 'This is About!';
+  @Output() aboutSelected = new EventEmitter();
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  selectAbout() {
+    this.aboutSelected.emit(true);
   }
 
 }

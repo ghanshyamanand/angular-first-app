@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./news.component.css']
 })
 export class NewsComponent implements OnInit {
-  news = 'News!';
+
+  news = 'This is News!';
+
   constructor() { }
 
   ngOnInit() {

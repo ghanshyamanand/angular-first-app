@@ -4,3 +4,8 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
+
+.ui-tour-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  fill: rgba(0, 0, 0, 0.5);
+}

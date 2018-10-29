@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import {RouterModule, Routes} from '@angular/router';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { HintModule } from 'angular-custom-tour';
 
 
 export const routes: Routes = [
@@ -56,6 +57,7 @@ export const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    HintModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
