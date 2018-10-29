@@ -16,7 +16,8 @@ import { HintModule } from 'angular-custom-tour';
 export const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    pathMatch: 'full',
+    redirectTo: 'homes'
   },
   {
     path: 'homes',
