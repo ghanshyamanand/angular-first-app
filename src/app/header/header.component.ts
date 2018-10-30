@@ -11,8 +11,13 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    const mno = this.intializeIntro()
+    mno.start();
+
+  }
+
+  intializeIntro(): any {
     const intro = introJs();
-// Initialize steps
     intro.setOptions({
       steps: [
         {
@@ -35,12 +40,10 @@ export class HeaderComponent implements OnInit {
           intro: 'Step <span style="color: green;">three</span> description',
           position: 'up'
         }
-
       ]
     });
-
-    intro.start();
-
+    return intro;
   }
+
 
 }
