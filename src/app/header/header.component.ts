@@ -36,6 +36,11 @@ export class HeaderComponent implements OnInit {
           position: 'bottom'
         },
         {
+          element: '#hey_there',
+          intro: 'Step <span style="color: green;">three</span> description',
+          position: 'up'
+        },
+        {
           element: '#footer',
           intro: 'Step <span style="color: green;">three</span> description',
           position: 'up'
