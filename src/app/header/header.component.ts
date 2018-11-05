@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    
+
     const tour = new Shepherd.Tour({
       defaults: {
         classes: 'shepherd-theme-arrows',
@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
       }
     });
 
-    tour.addStep('example-step', {
+    tour.addStep('example-step1', {
       text: 'This is home, click here to go to home page.',
       attachTo: '#id1 bottom',
       classes: 'example-step-extra-class',
@@ -37,7 +37,7 @@ export class HeaderComponent implements OnInit {
       ]
     });
 
-    tour.addStep('example-step', {
+    tour.addStep('example-step2', {
       text: 'This is news link, click here to go to news page.',
       attachTo: '#id2 bottom',
       classes: 'example-step-extra-class',
@@ -59,9 +59,9 @@ export class HeaderComponent implements OnInit {
       ]
     });
 
-    tour.addStep('example-step', {
+    tour.addStep('example-step3', {
       text: 'This is footer.',
-      attachTo: '#hey_there bottom',
+      attachTo: '#footer_id bottom',
       classes: 'example-step-extra-class',
       buttons: [
         {
@@ -82,10 +82,12 @@ export class HeaderComponent implements OnInit {
     });
 
     tour.start();
+    // tour.show("footer_id")
 
   }
 
 }
+
 
 
 
